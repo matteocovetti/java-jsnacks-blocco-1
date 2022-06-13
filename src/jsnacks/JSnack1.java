@@ -14,10 +14,18 @@ public class JSnack1 {
 		
 		int somma = 0;
 		
-		for(int i = 0; i < 5 ; i++) {
+//		for(int i = 0; i < 5 ; i++) {
+//			System.out.println("Dammi un numero: ");
+//			somma = somma + scan.nextInt();
+//		}
+		
+		int counter = 0;
+		
+		while (counter < 5) {
 			System.out.println("Dammi un numero: ");
 			somma = somma + scan.nextInt();
-		}
+			counter++;
+		} 
 		
 		System.out.println("La somma totale è: " + somma);
 		scan.close();
