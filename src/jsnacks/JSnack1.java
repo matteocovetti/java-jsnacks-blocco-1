@@ -1,5 +1,7 @@
 package jsnacks;
 
+import java.util.Scanner;
+
 public class JSnack1 {
 
 	/*Il software deve chiedere per 5 volte all’utente di inserire un numero.
@@ -7,8 +9,18 @@ public class JSnack1 {
 	 * Esegui questo programma in due versioni, con il for e con il while.
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Scanner scan = new Scanner(System.in);
+		
+		int somma = 0;
+		
+		for(int i = 0; i < 5 ; i++) {
+			System.out.println("Dammi un numero: ");
+			somma = somma + scan.nextInt();
+		}
+		
+		System.out.println("La somma totale è: " + somma);
+		scan.close();
 	}
 
 }
